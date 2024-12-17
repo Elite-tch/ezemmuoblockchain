@@ -1,0 +1,121 @@
+.about-container {
+    padding-top: 10%;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+.about-title, .my-blog h1{
+    font-family: Roboto Mono;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.2em;
+    color: #00004a;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .about-text-content {
+    flex: 2 1 400px;
+    
+  }
+  
+  .about-text-content p {
+    margin-bottom: 15px;
+    font-family: Roboto Mono;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #5a5a5a;
+    text-align: justify;
+  }
+  
+.my-blog{
+    margin: 32px 0px;
+}
+  #blogp {
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 32px;
+    margin-bottom: 1rem;
+    color: #5a5a5a;
+    font-weight: 500;
+}
+
+#readBlog {
+    line-height: 100px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    background: #000086;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+  
+
+
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-container {
+      padding-top: 40%;
+      width: 90%;
+      margin: 0 auto;
+      font-family: 'Roboto Mono', monospace;
+    }
+    #blogp {
+      font-size: 18px;
+      font-family: 'Roboto Mono', monospace;
+      line-height: 32px;
+      margin-bottom: 1rem;
+      color: #5a5a5a;
+      font-weight: 500;
+  }
+  
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-text-content {
+      text-align: center;
+    }
+    .about-title, .my-blog h1{
+      font-family: Roboto Mono;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: 0.2em;
+      color: #00004a;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    
+   
+  }
+  
+  @media (max-width: 480px) {
+    .about-me-title {
+      font-size: 1.8rem;
+    }
+  
+    .about-text-content {
+      font-size: 0.9rem;
+    }
+  
+   
+  }

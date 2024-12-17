@@ -1,0 +1,43 @@
+.galleryForm {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 30%;
+}
+
+.galleryForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.galleryForm input[type="file"] {
+    margin: 10px 0;
+}
+
+.galleryForm .preview img {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+strong {
+    display: block;
+    margin-top: 10px;
+    color: green;
+}

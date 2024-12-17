@@ -1,0 +1,33 @@
+.dashboard{
+    display: flex;
+    gap: 2rem;
+}
+.dashboard .dNav{
+    width: 17%;
+    border-right: 3px solid gray;
+    position: fixed;
+}
+.dashboard .body{
+    width: 80%;
+    margin-left: 17.5%;
+}
+
+
+
+@media (max-width: 768px) {
+    .dashboard .dNav{
+        width: 17%;
+        border-right: none;
+        position: relative;
+    }
+    .dashboard .body{
+        width: 100%;
+       
+        margin: auto;
+    }
+    .dashboard{
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+}

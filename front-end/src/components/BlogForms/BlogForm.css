@@ -1,0 +1,96 @@
+.blogForm{
+    padding-block: 2rem;
+    margin-top: 10%;
+}
+.blogForm h1{
+    font-family: Monts bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 26px;
+}
+.blogForm form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 70%;
+    margin: auto;
+}
+.blogForm form label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Monts Light;
+    font-size: 20px;
+}
+.blogForm form .tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.blogForm form input{
+    font-size: 18px;
+    padding: 10px 20px;
+    outline: none;
+    font-family: Monts light;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    word-wrap: break-all;
+    white-space: pre-wrap;
+}
+.blogForm form  select{
+    padding: 10px;
+    font-family: Monts light;
+    font-size: 19px;
+    border-radius: 10px;
+}
+.blogForm form button{
+    padding: 16px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #0145FE;
+    color: white;
+    cursor: pointer;
+    width: 60%;
+    margin: auto;
+    margin-top: -10%;
+}
+.blogForm .blogBody{
+    font-size: 20px;
+    font-family: Monts light;
+}
+.blogForm strong{
+    color: green;
+    font-family: Monts bold;
+    font-size: 16px;
+}
+.blogForm strong a{
+    color: inherit;
+}
+.blog-form-button{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .blogForm form{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 80%;
+        margin: auto;
+    }
+    .blogForm form button{
+        padding: 20px;
+        background-color: transparent;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: #0145FE;
+        color: white;
+        cursor: pointer;
+        margin-top: -20%;
+    }
+
+}
