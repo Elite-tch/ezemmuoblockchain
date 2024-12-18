@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",     // For production, run without Nodemon
-    "dev": "nodemon index.js"     // For development, run with Nodemon
+    "start": "node index.js",    
+    "dev": "nodemon index.js"     
   },
   "author": "",
   "license": "ISC",
