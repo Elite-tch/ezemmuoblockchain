@@ -1,0 +1,34 @@
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  margin: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+  font-family: Hanson bold;
+  src: url(/public/fonts/Hanson-Bold_28ef9370662e758bd08e61f45c3c69b8.otf);
+}
+@font-face {
+  font-family: Monts bold;
+  src: url(/public/fonts/Montserrat/static/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Monts boldl;
+  src: url(/public/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Monts light;
+  src: url(/public/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}

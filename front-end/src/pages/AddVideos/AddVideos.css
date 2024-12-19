@@ -1,0 +1,26 @@
+.profile h2{
+    font-size: 30px;
+    font-family: Monts bold;
+    padding-top: 40px;
+}
+.profile #subss{
+    width: 50%;
+    padding: 10px;
+    margin-left: auto;
+}
+
+
+.profile .uploadMsg{
+    font-family: Monts boldl;
+    color: green;
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+.video-input label{
+display: flex;
+flex-direction: column;
+
+}
+
+}
