@@ -1,0 +1,103 @@
+
+.videopages{
+   
+    color: #00004a;
+    text-align: left;
+    padding: 50px 0px 0px 0px;
+  }
+  
+  .videopages .containerss {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    
+  }
+  .text-sections h5{
+    width: 70%;
+  }
+  
+  .text-section {
+    flex: 1;
+  }
+  
+  .text-sections h1 {
+    font-size: 2rem;
+    margin-bottom: 18px;
+    font-family: system-ui, -apple-system,hanson, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 8px 0px;
+    line-height: 50px;
+    font-weight: 900;
+  }
+  
+  .text-sections h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    
+  }
+  
+  .social-iconss {
+    display: flex;
+    gap: 25px;
+    padding: 35px 0px;
+    
+  }
+  .social-iconss .icons{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+   
+  }
+
+  .social-iconss a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    color: inherit;
+  }
+  
+  .social-iconss .icons:hover {
+    color:  rgb(1, 69, 254);
+    
+  }
+  
+  .image-sections {
+    flex: 1.8;
+    text-align: center;
+  }
+  
+  .image-sections img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .videopages .containerss {
+      flex-direction: column;
+      text-align: center;
+    }
+    .text-sections h1 {
+      font-size: 1.5rem;
+      margin-bottom: 18px;
+      font-family: system-ui, -apple-system,hanson, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 8px 0px;
+      line-height: 50px;
+      font-weight: 900;
+    }
+    .text-sections,
+    .image-sections {
+      flex: unset;
+    }
+  
+    .social-iconss {
+      justify-content: center;
+    }
+    .text-sections h5{
+        width: 100%;
+      }
+      
+  }
+  

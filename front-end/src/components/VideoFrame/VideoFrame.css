@@ -1,0 +1,41 @@
+.videoFrame{
+    display: flex;
+    gap: 3%;
+    flex-wrap: wrap;
+    
+}
+.videoFrame .video{
+    width: calc(91%/3);
+    margin-bottom: 1rem;
+}
+.videoFrame .video p{
+    font-size: 16px;
+    font-family: Monts light;
+    line-height: 22px;
+}
+.videoFrame .video .ediDel{
+    display: flex;
+    gap: 10px;
+    /* justify-content: flex-end; */
+    cursor: pointer;
+    width: 100%;
+}
+.videoFrame .video .del{
+    background-color: transparent;
+    border: 1px solid red;
+    padding: 5px 15px;
+    color: red;
+    font-size: 16px;
+    font-family: Monts light;
+    float: right;
+    margin-top: .5rem;
+}
+.videoFrame .video #edit{
+    border: 1px solid black;
+    color: black;
+
+}
+.videoFrame .video #edit a{
+    text-decoration: none;
+    color: inherit;
+}
