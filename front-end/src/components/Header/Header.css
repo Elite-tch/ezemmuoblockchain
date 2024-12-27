@@ -94,7 +94,7 @@
   display: none;
 }
 
-.talk {
+.nav ul li a .talk {
     background-color:  rgb(1, 69, 254);
     padding: 8px 12px;
     font-size: 14px;
