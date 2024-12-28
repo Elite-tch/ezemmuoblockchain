@@ -43,7 +43,7 @@ const NavBar = () => {
                         <p>Blogs</p>
                         <ul>
                             <NavLink to='/admin/create-blog' onClick={closeSidebar} activeClassName='active'><li>Create Blog</li></NavLink>
-                            <NavLink to='/admin/blogs' onClick={closeSidebar} activeClassName='active'><li>View Blogs</li></NavLink>
+                            <NavLink to='/admin/add-videos' onClick={closeSidebar} activeClassName='active'><li>View Blogs</li></NavLink>
                         </ul>
                         <p>Videos</p>
                         <ul>
