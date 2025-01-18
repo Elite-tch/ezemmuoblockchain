@@ -1,0 +1,99 @@
+.gida, .unn {
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: calc(100% / 2);
+    box-shadow: 0px 0px 20px -10px #0145fe;
+   height: 600px;
+  
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+.unn h3 , .gida h3{
+    font-family: Roboto Mono;
+    font-size: 28px;
+    font-weight: 700;
+   line-height: 42px;
+    color: #00004a;
+}
+.unn img, .gida img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 100px;
+    animation: img-animation 5s infinite; /* Apply animation */
+}
+
+@keyframes img-animation {
+    35% {
+        transform: rotateX(360deg);
+    }
+    70% {
+        transform: rotateY(180deg);
+    }
+    90% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+
+
+.comm{
+    gap: 24px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    margin-top: 26px;
+}
+.comms h1{
+    font-family: Roboto Mono;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.2em;
+    color: #00004a;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.comm p{
+    font-family: Roboto Mono;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 0.3rem;
+    position: relative;
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+
+    .gida, .unn {
+        border: 1px solid;
+        border-radius: 15px;
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        box-shadow: 0px 0px 20px -10px #0145fe;
+       height: auto;
+      
+    }
+    .comm{
+        gap: 24px;
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        margin-top: 26px;
+        flex-direction: column;
+    }
+}

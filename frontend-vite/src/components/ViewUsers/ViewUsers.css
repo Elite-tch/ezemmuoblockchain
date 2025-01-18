@@ -1,0 +1,56 @@
+.ViewUsers{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 5rem;
+}
+.ViewUsers h1{
+    font-family: Monts Bold;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.ViewUsers ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    border-bottom: 2px solid gray;
+    margin-bottom: 2rem;
+}
+.ViewUsers ul li{
+    font-size: 20px;
+    font-family: Monts light;
+    width: 25%;
+}
+.ViewUsers ul :nth-child(1){
+    width: 20%;
+}
+.ViewUsers ul :nth-child(2){
+    width: 15%;
+}
+.ViewUsers ul :nth-child(3){
+    width: 50%;
+}
+.ViewUsers ul :nth-child(4){
+    width: 10%;
+}
+.ViewUsers .headers li{
+    font-weight: 600;
+}
+.delL{
+    margin-left: auto;
+    width: 50px !important;
+    cursor: pointer;
+}
+.delL img{
+    width: 30px !important;
+}
+.ViewUsers button{
+    padding: 10px 20px;
+    background-color: #00004a;
+    color: white;
+    font-family: Monts bold;
+    font-size: 16px;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 10px;
+}

@@ -1,0 +1,16 @@
+.communitys{
+    padding-top: 13%;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .communitys{
+        padding-top: 40%;
+        width: 90%;
+        margin: auto;
+    }
+}
