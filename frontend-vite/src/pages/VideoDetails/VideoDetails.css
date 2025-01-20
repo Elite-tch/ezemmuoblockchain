@@ -1,0 +1,45 @@
+.video-details {
+    padding: 2rem;
+  }
+  
+  .detail {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;
+    margin:30px auto;
+  }
+  
+  .video-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 95%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: auto;
+  }
+  
+  .video-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .video-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .detail {
+      display: grid; /* Enable grid layout */
+      grid-template-columns: repeat(1, 1fr); /* 3 equal columns */
+      gap: 20px;
+      margin:30px auto;
+    }
+
+
+  }

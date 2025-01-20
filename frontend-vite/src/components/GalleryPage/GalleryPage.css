@@ -1,0 +1,36 @@
+.blogPostss{
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  margin: auto;
+}
+
+.blogPostss img{
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+
+
+.container-display{
+  margin: 80px 0px;
+}
+
+
+@media (max-width: 767px) {
+  .container-display{
+    margin: 50px 0px;
+  }
+  .blogPostss{
+    width: 95%;
+    height: auto;
+    max-height: 400px;
+    margin: auto;
+    padding-top: 20px;
+  }
+  .blogPostss img{
+    width: 100%;
+    margin: auto;
+    height: auto;
+  }
+}

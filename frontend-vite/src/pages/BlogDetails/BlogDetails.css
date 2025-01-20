@@ -1,0 +1,360 @@
+.blog-details {
+    width: 90%;
+    margin:auto;
+    padding-top: 10%;
+    font-family: 'Roboto Mono', monospace;
+  }
+.blog-details-width{
+  width: 95%;
+  margin:auto;
+
+}
+
+.blogread{
+  width: 95%;
+  margin: auto;
+}
+
+  .top{
+display: flex;
+justify-items: center;
+gap: 8px;
+flex-direction: column;
+width: 90%;
+margin: auto;
+  }
+
+  .publish{
+   overflow-x: hidden;
+      }
+
+      .bread_author-flex {
+        display: flex;
+        flex-direction: row;     
+          }
+      
+      .bread_author .authorImg {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 10px 0px;
+      }
+.related{
+  margin: 30px 0px;
+}
+
+
+
+  .bread_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .blog_body {
+    font-size: 0.5rem;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Roboto Mono', monospace;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+
+
+.bread_date Link{
+font-size: 12px;
+}
+.himg{
+ max-width: 800px;
+  max-height:500px ;
+  margin: auto;
+}
+
+  .bread_title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .bread_date Link{
+    font-size: 12px;
+  }
+  
+  .blog-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .author-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .blog-info {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .bread_customTags ul {
+    margin: 10px 0px 0px 0px;
+  }
+  
+  .share-socials {
+    margin-bottom: 20px;
+  }
+  
+  .share-socials h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .author_socials Link img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    padding-top: 6px;
+  }
+  
+  .blog-image {
+    width: 90%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .bread_author-flex {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 18px;
+    padding: 10px 0px;
+  }
+  .bread_author{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+      }
+  
+  .bread_author .authorImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 0px;
+  }
+  
+  .comments-section {
+    margin-top: 40px;
+  }
+  
+  .comments-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .rcomments {
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 13%;
+   
+  }
+  .rcomments h1{
+    padding-bottom: 8px;
+  }
+ 
+  
+  .comments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    list-style: none;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .comments ul {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .comments ul li {
+    padding: 4px 0;
+    color: #333;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  
+  .comment {
+    width: 100%;
+   
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .comment h1 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .comment main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    
+  }
+  
+  .comment main div {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+  
+  .comment label {
+    
+    color: #555;
+  }
+  
+  .comment textarea,
+  .comment input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.5rem;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .comment textarea:focus,
+  .comment input:focus {
+    border-color: #007bff;
+  }
+  
+  .button-flex {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+  }
+  
+  .comment button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .comment button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .blog-details {
+      width: 100%;
+      margin:auto;
+      padding-top: 40%;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+   
+    .top{
+      display: flex;
+      justify-items: center;
+      gap: 0px;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+        }
+      
+        .blogread{
+          width: 90%;
+          margin: auto;
+        }  
+            .bread_customTags ul {
+              margin: 0px 0px 0px 0px;
+            }
+            .blog_body {
+              font-size: 0.5rem;
+              line-height: 1.6;
+              color: #333;
+              font-family: 'Roboto Mono', monospace;
+              width: 100%;
+              margin: auto;
+              text-align: left;
+            }
+
+            .comments ul {
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              padding: 8px;
+              background-color: #fff;
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              font-family: 'Roboto Mono', monospace;
+            }
+          
+
+
+
+            .comments {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              gap: 16px;
+              padding: 8px;
+              list-style: none;
+              background-color: #f9f9f9;
+              border-radius: 8px;
+              font-family: 'Roboto Mono', monospace;
+            }
+               
+
+
+
+
+   
+    .blog-title {
+      font-size: 2rem;
+    }
+  
+    .blog-meta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .author-icon {
+      margin-bottom: 10px;
+    }
+  
+    .share-socials img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  
