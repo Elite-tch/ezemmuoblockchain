@@ -1,0 +1,57 @@
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+   padding: 40px 0px;
+  }
+
+  .about-me-title {
+    font-family: Roboto Mono;
+font-size: 32px;
+font-weight: 700;
+line-height: 42.2px;
+letter-spacing: 0.6em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+    margin: 25px 0px;
+    color: #00004A;
+    
+  }
+  
+  .slider {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    animation: slide 20s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .slide-item {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+  
+  .slide-image {
+    width: 200px;
+   max-height: 80px;
+    object-fit: fill;
+    border-radius: 5px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .slide-item {
+      width: 50%;
+    }
+  }
+  
