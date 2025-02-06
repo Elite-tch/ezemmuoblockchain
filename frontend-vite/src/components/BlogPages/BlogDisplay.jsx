@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import axios from 'axios'
 import './BlogDisplay.css'
 import { useNavigate } from 'react-router-dom'
 import Loading from '../Loading/Loading'
 const BlogDisplay = () => {
-  const baseurl = 'https://ezemmuoblockchain-5.onrender.com'
+  const baseurl = 'http://localhost:3000'
   const [data, setData] = useState([])
   const [categories] = useState(['education', 'blockchain', 'crytocurrency', 'coding/dev', 'featured', 'tutorials', 'reviews', 'tech', 'productivity'])
   const [selectedCategory, setSelectedCategory] = useState('')

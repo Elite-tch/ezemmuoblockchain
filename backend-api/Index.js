@@ -1,42 +1,33 @@
+require("dotenv").config();
 const express = require("express");
-const mongoose = require("mongoose");
 const cors = require("cors");
-const bcrypt = require("bcrypt");
-const User = require("./models/UserModel");
-const Blog = require("./models/blogModel");
-const VideoLinks = require("./models/Videos");
-const Mail = require("./models/newsletters");
-const BlogRoutes = require("./routes/blogRoutes");
+require("express-async-errors");
 
-const GalleryRoutes = require("./routes/galleryRoutes");
-const AuthRoutes = require("./routes/DashAuth");
-const MailRoutes = require("./routes/subscribeToNewsLetter");
-const VideoRoute = require("./routes/youtubeVideos");
-const UserRoutes = require("./routes/Users");
+const router = require("./routes");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
+
+const errorHandler = require("./middleware/errorHandler");
+const connectDB = require("./db");
 const app = express();
 
 // static requests
 app.set("view engine", "ejs", "HTML");
-const mongoURI =
-  "mongodb+srv://Kevin:Chibuoyim@cluster0.qyty0yo.mongodb.net/Kevin?retryWrites=true&w=majority";
-mongoose
-  .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log("MongoDB connected..."))
-  .catch((err) => console.log(err));
+
+// Connect to the database
+connectDB();
+
 app.use(morgan("dev"));
 app.use(express.static("public"));
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.use(cors());
 app.use(bodyParser.json());
-app.use(BlogRoutes);
-app.use(GalleryRoutes);
-app.use(AuthRoutes);
-app.use(MailRoutes);
-app.use(UserRoutes);
-app.use(VideoRoute);
+
+// Middleware for logging request details
+
+//ROUTES
+app.use(router);
 
 //GET and POST requests
 
@@ -47,8 +38,10 @@ app.use((req, res) => {
   res.status(404).render("404", { title: "404" });
 });
 
+// Middleware for handling errors
+app.use(errorHandler);
 //LISTENING FOR REQUESTS
 
-app.listen(3000, (req, res) => {
+app.listen(3000, () => {
   console.log("server running on port http://localhost:3000");
 });

@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import BlogFrame from "../blogFrame/blogFrame";
 import axios from "axios";
 import Loading from "../Loading/Loading";
 import "./blogPost.css";
 
 const BlogPost = () => {
-  const baseurl = "http://localhost:3000";
+  const baseurl = "http://localhost:300";
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -13,13 +13,13 @@ const BlogPost = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${baseurl}/blogs`);
+        const response = await axios.get(`${baseurl}/`);
         setData(response.data.blogs);
         console.log("🚀 ~ fetchData ~ response:", response);
-        setLoading(false);
       } catch (err) {
         console.error("Error fetching data:", err);
         setError(err);
+      } finally {
         setLoading(false);
       }
     };

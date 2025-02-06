@@ -1,70 +1,74 @@
-import React from 'react';
+import { Suspense, lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-
+// 
 import Header from './components/Header/Header';
-import BlogForm from './components/BlogForms/BlogForm';
-import ViewUsers from './components/ViewUsers/ViewUsers';
-import ViewProfile from './components/ViewProfile/ViewProfile';
-import BlogRead from './components/blogread/blogread';
-import VideoEdit from './components/VideoEdit/VideoEdit';
+import Loading from './components/Loading/Loading';
 
-import Dashboard from './pages/Dashboard/Dashboard';
-import ViewBlogs from './pages/ViewBlogs/ViewBlogs';
-import SignUp from './pages/SignUp/SignUp';
-import Login from './pages/Login/Login';
-import BlogEdit from './pages/BlogEdit/BlogEdit';
-import Videos from './pages/Videos/Videos';
-import Main from './pages/main/Main';
-import AddVideos from './pages/AddVideos/AddVideos';
-import Newsletter from './pages/Newsletter/Newsletter';
-import CommentPage from './pages/CommentPage/CommentPage';
-import Home from './pages/Home/Home';
-import BlogPage from './pages/Blog/blog';
-import BlogDetails from './pages/BlogDetails/BlogDetails';
-import BlogDisplay from './components/BlogPages/BlogDisplay';
-import VideoDetails from './pages/VideoDetails/VideoDetails';
-import AboutUs from './pages/AboutUs/AboutUs';
-import Community from './pages/Community/Community';
-import ContactUs from './pages/Contact/Contact';
-import GalleryForm from './components/Gallery-form/GalleryForm';
-import ViewGallery from './pages/ViewGallery/ViewGallery';
+const BlogForm = lazy(() => import('./components/BlogForms/BlogForm'));
+const ViewUsers = lazy(() => import('./components/ViewUsers/ViewUsers'));
+const ViewProfile = lazy(() => import('./components/ViewProfile/ViewProfile'));
+const BlogRead = lazy(() => import('./components/blogread/blogread'));
+const VideoEdit = lazy(() => import('./components/VideoEdit/VideoEdit'));
+
+const Dashboard = lazy(() => import('./pages/Dashboard/Dashboard'));
+const ViewBlogs = lazy(() => import('./pages/ViewBlogs/ViewBlogs'));
+const SignUp = lazy(() => import('./pages/SignUp/SignUp'));
+const Login = lazy(() => import('./pages/Login/Login'));
+const BlogEdit = lazy(() => import('./pages/BlogEdit/BlogEdit'));
+const Videos = lazy(() => import('./pages/Videos/Videos'));
+const Main = lazy(() => import('./pages/main/Main'));
+const AddVideos = lazy(() => import('./pages/AddVideos/AddVideos'));
+const Newsletter = lazy(() => import('./pages/Newsletter/Newsletter'));
+const CommentPage = lazy(() => import('./pages/CommentPage/CommentPage'));
+const Home = lazy(() => import('./pages/Home/Home'));
+const BlogPage = lazy(() => import('./pages/Blog/blog'));
+const BlogDetails = lazy(() => import('./pages/BlogDetails/BlogDetails'));
+const BlogDisplay = lazy(() => import('./components/BlogPages/BlogDisplay'));
+const VideoDetails = lazy(() => import('./pages/VideoDetails/VideoDetails'));
+const AboutUs = lazy(() => import('./pages/AboutUs/AboutUs'));
+const Community = lazy(() => import('./pages/Community/Community'));
+const ContactUs = lazy(() => import('./pages/Contact/Contact'));
+const GalleryForm = lazy(() => import('./components/Gallery-form/GalleryForm'));
+const ViewGallery = lazy(() => import('./pages/ViewGallery/ViewGallery'));
+
 function App() {
   return (
     <BrowserRouter>
       <>
         <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/admin' element={<Dashboard />}>
-            <Route index element={<Main />} />
-            <Route path='create-blog' element={<BlogForm />} />
-            <Route path='blogs' element={<ViewBlogs />} />
-            <Route path='blogs/viewblog' element={<BlogRead />} />
-            <Route path='gallery' element={<ViewGallery />} />
-            <Route path='add-user' element={<SignUp />} />
-            <Route path='gallery-form' element={<GalleryForm />} />
-            <Route path='blog-edit' element={<BlogEdit />} />
-            <Route path='view-users' element={<ViewUsers />} />
-            <Route path='profile' element={<ViewProfile />} />
-            <Route path='videos' element={<Videos />} />
-            <Route path='add-videos' element={<AddVideos />} />
-            <Route path='edit-videos' element={<VideoEdit />} />
-            <Route path='newsletter' element={<Newsletter />} />
-            <Route path='comments' element={<CommentPage />} />
-          </Route>
-          <Route path='/add' element={<SignUp />} />
-          <Route path='/about' element={<AboutUs />} />
-          <Route path='/community' element={<Community />} />
-          
-          <Route path='/contact' element={<ContactUs/>} />
-          <Route path="/blog" element={<BlogPage />}>
-         
-            <Route index element={<BlogDisplay />} />
-            <Route path="video-details" element={<VideoDetails />} />
-          </Route>
-          <Route path="/blog/:blogId" element={<BlogDetails />} /> </Routes>
+        <Suspense fallback={<Loading/>}>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/admin' element={<Dashboard />}>
+              <Route index element={<Main />} />
+              <Route path='create-blog' element={<BlogForm />} />
+              <Route path='blogs' element={<ViewBlogs />} />
+              <Route path='blogs/viewblog' element={<BlogRead />} />
+              <Route path='gallery' element={<ViewGallery />} />
+              <Route path='add-user' element={<SignUp />} />
+              <Route path='gallery-form' element={<GalleryForm />} />
+              <Route path='blog-edit' element={<BlogEdit />} />
+              <Route path='view-users' element={<ViewUsers />} />
+              <Route path='profile' element={<ViewProfile />} />
+              <Route path='videos' element={<Videos />} />
+              <Route path='add-videos' element={<AddVideos />} />
+              <Route path='edit-videos' element={<VideoEdit />} />
+              <Route path='newsletter' element={<Newsletter />} />
+              <Route path='comments' element={<CommentPage />} />
+            </Route>
+            <Route path='/add' element={<SignUp />} />
+            <Route path='/about' element={<AboutUs />} />
+            <Route path='/community' element={<Community />} />
+            <Route path='/contact' element={<ContactUs />} />
+            <Route path="/blog" element={<BlogPage />}>
+              <Route index element={<BlogDisplay />} />
+              <Route path="video-details" element={<VideoDetails />} />
+            </Route>
+            <Route path="/blog/:blogId" element={<BlogDetails />} />
+          </Routes>
+        </Suspense>
       </>
     </BrowserRouter>
   );

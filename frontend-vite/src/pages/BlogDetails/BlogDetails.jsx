@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import ReactQuill from 'react-quill';
@@ -19,7 +19,7 @@ const BlogDetails = () => {
     email: ''
   });
 
-  const baseurl = 'https://ezemmuoblockchain-5.onrender.com';
+  const baseurl = 'http://localhost:3000';
 
   // Scroll to top on component mount
   useEffect(() => {
@@ -169,7 +169,7 @@ const BlogDetails = () => {
          <h3>{data.author}</h3>
                    <p>
                      <Link to={`/articles/authors/${authorUrl}`} state={data.author}>
-                       See author's posts
+                       See author&#39;s posts
                      </Link>
                    </p>
                    <span className="author_socials">
